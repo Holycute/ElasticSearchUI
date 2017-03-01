@@ -1,0 +1,6 @@
+elasticSearchUI/Debug/*
+elasticSearchUI/GeneratedFiles/*
+elasticSearchUI/x64/*
+Win32/*
+x64/*
+*.sdf
