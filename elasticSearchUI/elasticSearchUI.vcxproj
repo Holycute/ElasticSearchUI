@@ -168,6 +168,7 @@
     </ClCompile>
     <ClCompile Include="http.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="QTextEdit_T.cpp" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="elasticsearchui.h">
@@ -211,6 +212,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_elasticsearchui.h" />
+    <ClInclude Include="QTextEdit_T.h" />
     <CustomBuild Include="http.h">
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing http.h...</Message>

@@ -4,3 +4,5 @@ elasticSearchUI/x64/*
 Win32/*
 x64/*
 *.sdf
+*.swp
+*.opensdf

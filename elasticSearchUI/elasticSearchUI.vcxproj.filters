@@ -59,6 +59,9 @@
     <ClCompile Include="GeneratedFiles\Release\moc_http.cpp">
       <Filter>Generated Files\Release</Filter>
     </ClCompile>
+    <ClCompile Include="QTextEdit_T.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="elasticsearchui.h">
@@ -77,6 +80,9 @@
   <ItemGroup>
     <ClInclude Include="GeneratedFiles\ui_elasticsearchui.h">
       <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QTextEdit_T.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

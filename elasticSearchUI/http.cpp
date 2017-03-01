@@ -22,6 +22,7 @@ void HTTP::finshedReply(QNetworkReply * reply){
 		//qDebug()<< "111111111111111" << "\n";
 		qDebug()<< reply->readAll().data()<< "\n";
 	}else{
+		qDebug()<<"2222222222"<< "\n";
 		qDebug()<< reply->errorString() << "\n";
 	}
 	reply->deleteLater();
