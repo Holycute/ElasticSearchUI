@@ -3,7 +3,7 @@
 
 #include <QtWidgets/QMainWindow>
 #include "ui_elasticsearchui.h"
-#include "QTextEdit_T.h"
+#include <QtWidgets/qtextedit.h>
 
 class elasticSearchUI : public QMainWindow
 {
@@ -15,7 +15,7 @@ public:
 
 private:
 	Ui::elasticSearchUIClass ui;
-	QTextEdit_T * qtext;
+	QTextEdit * qtext;
 };
 
 #endif // ELASTICSEARCHUI_H

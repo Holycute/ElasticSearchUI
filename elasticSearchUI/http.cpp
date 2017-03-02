@@ -14,7 +14,11 @@ HTTP::HTTP()
 }
 void HTTP::get(QString url)
 {
-	this->qHttp->get(QNetworkRequest(QUrl(url)));
+	QUrl qu = QUrl(url);
+	QNetworkRequest qr = QNetworkRequest(qu);
+	this->qHttp->get(qr);
+	qDebug()<<&qu<<"a11111111url";
+	qDebug()<<&qr<<"a11111111req";
 }
 
 void HTTP::finshedReply(QNetworkReply * reply){
@@ -25,6 +29,8 @@ void HTTP::finshedReply(QNetworkReply * reply){
 		qDebug()<<"2222222222"<< "\n";
 		qDebug()<< reply->errorString() << "\n";
 	}
+	qDebug()<<&reply->url()<<"a11111111url";
+	qDebug()<<&reply->request()<<"a11111111req";
 	reply->deleteLater();
 }
 
